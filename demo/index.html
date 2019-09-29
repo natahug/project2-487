@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Impeachment Process Explained</title>
+  <link rel="stylesheet" type="text/css" href="../src/jquery.quiz.css" />
+</head>
+<body>
+  <div class = "test"></div>
+<div id="quiz">
+  <div id="quiz-header">
+    <h1 id="custom-logo">Impeachment Process Quiz</h1>
+    <p><a id="custom-home">Test your new knowledge of the Impeachment Process in the U.S.</a></p>
+  </div>
+  <div id="quiz-start-screen">
+    <h1></h1>
+    <div><a href="#" id="quiz-start-btn" class="quiz-button">Begin</a></div>
+  </div>
+  <div id="quiz-results-screen">
+    <h2>That's correct!</h2>
+  </div>
+  <div id="quiz-gameover-screen">
+    <h2>Sorry, try again!</h2>
+    <p id="quiz-gameover-response"></p>
+    <p><a href="#" id="quiz-retry-btn">Retry</a></p>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../src/jquery.quiz.js"></script>
+<script>
+  $('#quiz').quiz({
+    //resultsScreen: '#results-screen',
+    //counter: false,
+    homeButton: '#custom-home',
+    counterFormat: 'Question %current',
+    allowIncorrect: false,
+    questions: [
+      {
+        'q': 'How many U.S. president have been impeached?',
+        'options': [
+          'A. 2, Nixon and Johnson',
+          'B. 2, Johnson and Clinton',
+          'C. 1, Nixon',
+          'D. 0'
+        ],
+        'correctIndex': 1,
+        'correctResponse': 'Correct! neither were aquitted by the Senate, but Andrew Johnson and Bill Clinton were found quilty by the House for "high crimes and misdemeanors".',
+        'incorrectResponse': 'Incorrect.'
+      },
+      {
+        'q': 'A smaple question?',
+        'options': [
+          'Answer 1',
+          'Answer 2'
+        ],
+        'correctIndex': 1,
+        'correctResponse': 'Custom correct response.',
+        'incorrectResponse': 'Custom incorrect response.'
+      },
+      {
+        'q': 'A smaple question?',
+        'options': [
+          'Answer 1',
+          'Answer 2'
+        ],
+        'correctIndex': 0,
+        'correctResponse': 'Custom correct response.',
+        'incorrectResponse': 'Custom incorrect response.'
+      },
+      {
+        'q': 'A smaple question?',
+        'options': [
+          'Answer 1',
+          'Answer 2'
+        ],
+        'correctIndex': 1,
+        'correctResponse': 'Custom correct response.',
+        'incorrectResponse': 'Custom incorrect response.'
+      },
+      {
+        'q': 'A smaple question?',
+        'options': [
+          'Answer 1',
+          'Answer 2'
+        ],
+        'correctIndex': 0,
+        'correctResponse': 'Custom correct response.',
+        'incorrectResponse': 'Custom incorrect response.'
+      }
+    ]
+  });
+</script>
+</body>
+</html>
