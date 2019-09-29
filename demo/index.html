@@ -3,9 +3,15 @@
 <head>
   <title>Impeachment Process Explained</title>
   <link rel="stylesheet" type="text/css" href="../src/jquery.quiz.css" />
+  <link rel="stylesheet" type="text/css" href="../src/panorama_viewer.css" />
 </head>
 <body>
-  <div class = "test"></div>
+  <div class = "test">
+      <div class="panorama">
+          <img src="../img/capitol.jpg">
+        </div>
+        
+  </div>
 <div id="quiz">
   <div id="quiz-header">
     <h1 id="custom-logo">Impeachment Process Quiz</h1>
@@ -25,9 +31,15 @@
   </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="../src/jquery.quiz.js"></script>
+<script src="../src/jQuery.panorama_viewer.js"></script>
 <script>
+    $(document).ready(function(){
+      $(".panorama").panorama_viewer({
+        repeat: true
+      });
+		});
   $('#quiz').quiz({
     //resultsScreen: '#results-screen',
     //counter: false,
