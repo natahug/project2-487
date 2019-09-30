@@ -3,15 +3,24 @@
 <head>
   <title>Impeachment Process Explained</title>
   <link rel="stylesheet" type="text/css" href="../src/jquery.quiz.css" />
-  <link rel="stylesheet" type="text/css" href="../src/panorama_viewer.css" />
+  <link rel="stylesheet" type="text/css" href="../src/jInvertScroll.css" />
 </head>
 <body>
-  <div class = "test">
-      <div class="panorama">
-          <img src="../img/capitol.jpg">
-        </div>
-        
-  </div>
+    <h1>jInvertScroll Example</h1>
+    
+    <div class="horizon scroll">
+        <img src="../img/photo-1557160854-e1e89fdd3286.jpg" alt="" />
+    </div>
+    <div class="middle scroll">
+        <img src="../img/capitol.jpg" alt="" />
+    </div>
+    <div class="front scroll">
+        <img src="../img/capitol2.jpg" alt="" />
+    </div>
+    
+   
+    
+ 
 <div id="quiz">
   <div id="quiz-header">
     <h1 id="custom-logo">Impeachment Process Quiz</h1>
@@ -31,15 +40,26 @@
   </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script src="../src/jquery.jInvertScroll.js"></script>
 <script src="../src/jquery.quiz.js"></script>
-<script src="../src/jQuery.panorama_viewer.js"></script>
+
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+    }(jQuery));
+    </script>
 <script>
-    $(document).ready(function(){
-      $(".panorama").panorama_viewer({
-        repeat: true
-      });
-		});
   $('#quiz').quiz({
     //resultsScreen: '#results-screen',
     //counter: false,
