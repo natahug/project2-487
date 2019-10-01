@@ -23,12 +23,23 @@ body
     padding: 0;
     margin: 0;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 13px;
     color:black;
 }
 .sitting-trump, .trump-head{
     border: 1px #eee solid;
     padding:5px;
+}
+.sitting-caption{
+    z-index: 1000000000;
+    left: 2000px;
+    top: 60%;
+    position: absolute;
+    height: 280px;
+    color: white;
+    width: 450px;
+    font-size: 10px;
+    text-align: center;
 }
 
 h1,
@@ -82,6 +93,15 @@ pre
   color:white;
   margin-left:20px;
   margin-bottom:0;
+}
+@media screen and (max-width: 777px){
+    .impeach{
+        font-size:20px;
+        font-family: 'Marcellus', serif;
+  color:white;
+  margin-left:20px;
+  margin-bottom:0;
+    }
 }
 .explained{
 padding-left:15px;
@@ -214,15 +234,36 @@ margin-left:30px;
 }
 .trump-head{
     height: 300px;
-    left: 806px;
+    left: 870px;
     top: 40%;
     position: absolute;
+
+}
+.head-cap{
+    height: 300px;
+    left: 870px;
+    position: absolute;
+    z-index: 1000000000;
+    top: 95%;
+    color: white;
+    width: 500px;
+    font-size: 10px;
 
 }
 .flow{
    padding-right:20px;
 }
 .special{
-    font-size: 15px;
+    font-size: 13px;
     padding-left:10px;
+}
+.nadler{
+    float:right;
+    margin-right:25%;
+   
+    padding:10px;
+    padding-bottom:0px !important;
+}
+#custom-home{
+    color:white;
 }
