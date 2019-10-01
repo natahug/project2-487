@@ -2,6 +2,8 @@
 body
 {
     overflow-x: hidden;
+    background-color:black;
+    font-family: 'Poppins', sans-serif;
 }
 
 /**
@@ -15,3 +17,167 @@ body
     left: 0;
 }
 
+html,
+body
+{
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 16px;
+    color:black;
+}
+
+h1,
+h2,
+h3
+{
+    color: black;
+    font-family: 'Marcellus', serif;
+}
+
+h3
+{
+    margin: 10px 0;
+}
+
+a
+{
+    color: #238acb;
+}
+
+a img
+{
+    border: none;
+}
+
+pre
+{
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    background: #646464;
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    background: red;
+    z-index: 1000;
+    color:white;
+}
+.impeach{
+  font-size:50px;
+}
+.impeach{
+  font-family: 'Marcellus', serif;
+  color:white;
+  margin-left:20px;
+  margin-bottom:0;
+}
+.explained{
+padding-left:15px;
+ font-family: 'Marcellus', serif;
+ font-size:90px;
+ color:white;
+ font-style: italic;
+ margin:0;
+ position: absolute;
+}
+ #intro-impeach{
+  margin-left:20px;
+  font-size:15px;
+  color:white;
+  position: absolute;
+  top:20%;
+ 
+}
+#scroll-down{
+  color:red;
+}
+
+
+
+.horizon
+{
+    line-height: 0;
+    z-index: 100;
+    width: 3000px;
+}
+
+.middle
+{
+    z-index: 250;
+    line-height: 0;
+    width: 4500px;
+}
+
+.front
+{
+    z-index: 500;
+    top: 150px;
+    width: 6000px;
+}
+
+.the {
+  font-size:80px;
+  color:black;
+  font-style: italic;
+}
+
+
+
+.page
+{
+    top: 0px;
+    width: 500px;
+    background:lightblue;
+    padding: 10px 30px;
+    border: 1px #eee solid;
+    position: absolute;
+}
+
+.description
+{
+    left: 1500px;
+    
+}
+
+.documentation
+{
+    left: 2498px;
+    width: 700px;
+    
+}
+
+.options
+{
+    width: 700px;
+    left: 3800px;
+}
+
+.quiz
+{
+    width: 500px;
+    left: 5100px;
+}
+
+.license
+{
+    padding: 100px 30px 30px 30px;
+}
+.capitol{
+  z-index:1000000000;
+  left: 1500px;
+  top:15%;
+  position: absolute;
+}
+.flag{
+  left:2450px;
+  top:15%;
+  position: absolute;
+}

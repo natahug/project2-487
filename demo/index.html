@@ -4,24 +4,94 @@
   <title>Impeachment Process Explained</title>
   <link rel="stylesheet" type="text/css" href="../src/jquery.quiz.css" />
   <link rel="stylesheet" type="text/css" href="../src/jInvertScroll.css" />
+  <link href="https://fonts.googleapis.com/css?family=Marcellus|Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>jInvertScroll Example</h1>
-    
-    <div class="horizon scroll">
-        <img src="../img/photo-1557160854-e1e89fdd3286.jpg" alt="" />
+  <div class="container">
+    <div class = "header">
+      <h1 class = "impeach">The Impeachment Process</h1>
     </div>
-    <div class="middle scroll">
-        <img src="../img/capitol.jpg" alt="" />
-    </div>
-    <div class="front scroll">
-        <img src="../img/capitol2.jpg" alt="" />
-    </div>
-    
    
+  
+    <div class="horizon scroll">
+      
+    </div>
+  
+    <div class="middle scroll">
+      
+    </div>
+  
+    <div class="front scroll">
+      <h1 class = "explained">EXPLAINED.</h1>
+      <p id = "intro-impeach">In light of Speaker of the House Nancy Pelosi's announcement <br>of the House's formal impeachment inquiry of President Trump, <br>
+        many people are left questioning, 
+        what is the impeachment <br>process in the U.S. and how 
+        will President Trump be tried?<br>
+      <span id = "scroll-down">SCROLL DOWN </span>to find out.</p>
+
+      <img class = "trump-cartoon" src= "../img/impeached.png">
+      
     
+  
+      <div class="description page">
+        <h2>What is Impeachment?</h2>
+        <p>
+          We're not talking fruits and vegtables.
+          <br> <br>The U.S. Consitution permits impeachment as the <br>removal of a holder of public office by the means <br>of a charge of misconduct. 
+          <br/> <br> Article II, section 4 states "The President, Vice President<br> and all Civil Officers of the United States, shall be <br>removed from Office on Impeachment for, and <br>Conviction of, Treason, Bribery, or other high <br>Crimes and Misdemeanors."<br> <br> <br>The question then, who qualifies such <br>"high Crimes and Misdemeanors"?
+  
+          <hr style="border:none; border-bottom: 1px #ddd solid;" /> 
+        
+         <br>
+         <br>
+         <br>
+       
+
+        </p>
+      </div>
+      <img class = "capitol" src= "../img/capitol.png">
+  
+      <div class="documentation page">
+        <h2>The House's Role</h2>
+        <p>
+            In a nutshell: the Contitution give the "power of impeachment" to the Senate, but in order to make it to the Senate, a figure must be found guilty by the House of Representatives.
+          <br/> The House Judiciary Committee first conducts an investigation and recommends articles of impeachment to the full House. "When the full House votes on articles of impeachment, if at least one gets a majority vote, the president is impeached — which is essentially the equivalent of being indicted." (New York Times) If there is a majority vote, the articles of impeachment move to the Senate, which holds a trial
+          <br/>
+          <h2>The Senate's Role</h2>
+          <p>
+          There are no set rules for the Senate's trial, nor are there any requirments set forth in the Consitiution about this process. After the trial, the Senate holds a vote to convict the president. If the vote has a 2/3 or greater majority, the president is removed from Ofice. 
+  
+          <br/> Only 2 U.S. president have been formally impeached: Andrew Johnson and Bill Clinton. Neither of them were convicted by the Senate. Nixon resigned before the impeachment inquiry after the Watergate Scandal, and was never formally impeached, though he would have likely been found guilty by the Senate. 
+          <hr style="border:none; border-bottom: 1px #ddd solid;" /> 
+          <br>
+          <br>
+          <br>
+          <br>
+        </p>
+      </div>
+      <!-- <img class = "flag" src= "../img/flag.png">
+   -->
+      <div class="options page">
+        <h2>What this all means now?</h2>
+        <p>
+          You can tweak some options if you like:
+          <br/>
+          <pre>$.jInvertScroll(['.myScrollableElements'], {
+    width: 'auto',	// Page width (auto or int value)
+    height: 'auto',	// Page height (the shorter, the faster the scroll)
+    onScroll: function(percent) {
+      // Callback function that will be called each time the user
+      // scrolls up or down, useful for animating other parts
+      // on the page depending on how far the user has scrolled down
+      // values go from 0.0 to 1.0 (with 4 decimals precision)
+    }
+  });</pre>
+        </p>
+      </div>
+  
+      
  
-<div id="quiz">
+<div id="quiz" class="quiz page">
   <div id="quiz-header">
     <h1 id="custom-logo">Impeachment Process Quiz</h1>
     <p><a id="custom-home">Test your new knowledge of the Impeachment Process in the U.S.</a></p>
@@ -39,7 +109,7 @@
     <p><a href="#" id="quiz-retry-btn">Retry</a></p>
   </div>
 </div>
-
+</div>
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
