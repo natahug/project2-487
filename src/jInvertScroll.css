@@ -190,7 +190,7 @@ margin-left:30px;
 .options
 {
     width: 700px;
-    left: 3800px;
+    left: 3698px;
 
 }
 .options img{
@@ -231,6 +231,7 @@ margin-left:30px;
     left: 642px;
     top: 6%;
     position: absolute;
+    z-index: 10000000000000;
 }
 .trump-head{
     height: 300px;
